@@ -27,6 +27,11 @@ skills/
 
 ## 安装
 
+```bash
+git clone https://github.com/ANICIFIA/pretend_as_PM.git
+cd pretend_as_PM
+```
+
 ### 自动安装
 
 **macOS / Linux：**
