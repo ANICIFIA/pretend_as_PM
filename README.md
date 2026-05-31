@@ -56,9 +56,10 @@ install.bat
 在全局 CLAUDE.md 中添加以下行，确保每轮对话都能看到提醒：
 
 ```markdown
-- 涉及方案抉择或新增功能设计时，触发 pretend_as_PM Skill 记录决策后再修改代码。
-  修改完成后输出 `📋 决策已记录：PM-xxx`（无方案抉择则无需输出）。
-  若用户发现应记录但未记录，可手动 `/pm-decision`。
+- 每次调用 Edit/Write 修改代码前，先想一秒：这个改动有方案取舍吗？
+  有 → 触发 pretend_as_PM 记录决策后再改；没有 → 直接改。
+  改完后输出 `📋 决策已记录：PM-xxx`（无则无需输出）。
+  若漏记可 `/pm-decision` 补。
 ```
 
 **macOS / Linux**：`~/.claude/CLAUDE.md`
