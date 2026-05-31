@@ -31,7 +31,7 @@ echo ""
 echo "  ~/.claude/CLAUDE.md (global)"
 echo "  or <project>/.claude/CLAUDE.md (per-project)"
 echo ""
-echo '  - 涉及方案抉择时，触发 pretend_as_PM Skill 记录决策后再修改代码。'
+echo '  - 涉及方案抉择或新增功能设计时，触发 pretend_as_PM Skill 记录决策后再修改代码。'
 echo '    修改完成后输出 📋 决策已记录：PM-xxx（无方案抉择则无需输出）。'
 echo '    若用户发现应记录但未记录，可手动 /pm-decision。'
 echo ""
